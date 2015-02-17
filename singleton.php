@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * 
+ * @author edu
+ *
+ */
 class Preferences {
 	private $props = array();
 	private static $instance;
@@ -17,6 +22,11 @@ class Preferences {
 		self::$instance->props = array();
 	}
 	
+	/**
+	 * 
+	 * @param unknown $key
+	 * @param unknown $val
+	 */
 	public function setProperty($key, $val){
 		$this->props[$key]=$val;
 	}
